@@ -1,0 +1,97 @@
+"digraph plan {\n0[ label=\"plan_start\",style=filled,fillcolor=black,fontcolor=white];\n\
+  1[ label=\"undock_start\n(kenny,wp0)\",style=filled,fillcolor=darkolivegreen,fontcolor=white];\n\
+  2[ label=\"undock_end\n(kenny,wp0)\",style=filled,fillcolor=darkolivegreen,fontcolor=white];\n\
+  3[ label=\"localise_start\n(kenny)\",style=filled,fillcolor=darkolivegreen,fontcolor=white];\n\
+  4[ label=\"localise_end\n(kenny)\",style=filled,fillcolor=darkolivegreen,fontcolor=white];\n\
+  5[ label=\"goto_waypoint_start\n(kenny,wp0,wp0)\",style=filled,fillcolor=darkolivegreen,fontcolor=white];\n\
+  6[ label=\"goto_waypoint_end\n(kenny,wp0,wp0)\",style=filled,fillcolor=darkolivegreen,fontcolor=white];\n\
+  7[ label=\"goto_waypoint_start\n(kenny,wp0,wp1)\",style=filled,fillcolor=darkolivegreen,fontcolor=white];\n\
+  8[ label=\"goto_waypoint_end\n(kenny,wp0,wp1)\",style=filled,fillcolor=darkgoldenrod2];\n\
+  9[ label=\"goto_waypoint_start\n(kenny,wp1,wp0)\"];\n10[ label=\"goto_waypoint_end\n\
+  (kenny,wp1,wp0)\"];\n11[ label=\"goto_waypoint_start\n(kenny,wp0,wp2)\"];\n12[ label=\"\
+  goto_waypoint_end\n(kenny,wp0,wp2)\"];\n13[ label=\"goto_waypoint_start\n(kenny,wp2,wp0)\"\
+  ];\n14[ label=\"goto_waypoint_end\n(kenny,wp2,wp0)\"];\n15[ label=\"goto_waypoint_start\n\
+  (kenny,wp0,wp3)\"];\n16[ label=\"goto_waypoint_end\n(kenny,wp0,wp3)\"];\n17[ label=\"\
+  goto_waypoint_start\n(kenny,wp3,wp0)\"];\n18[ label=\"goto_waypoint_end\n(kenny,wp3,wp0)\"\
+  ];\n19[ label=\"goto_waypoint_start\n(kenny,wp0,wp4)\"];\n20[ label=\"goto_waypoint_end\n\
+  (kenny,wp0,wp4)\"];\n21[ label=\"goto_waypoint_start\n(kenny,wp4,wp0)\"];\n22[ label=\"\
+  goto_waypoint_end\n(kenny,wp4,wp0)\"];\n23[ label=\"dock_start\n(kenny,wp0)\"];\n\
+  24[ label=\"dock_end\n(kenny,wp0)\"];\n\"0\" -> \"1\" [ label=\"[0.001, inf]\" ,\
+  \ penwidth=2, color=\"black\"]\n\"1\" -> \"2\" [ label=\"[10, 10]\" , penwidth=2,\
+  \ color=\"black\"]\n\"0\" -> \"2\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  black\"]\n\"2\" -> \"3\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"\
+  ]\n\"3\" -> \"4\" [ label=\"[60, 60]\" , penwidth=2, color=\"black\"]\n\"0\" ->\
+  \ \"4\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"4\" -> \"5\"\
+  \ [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"2\" -> \"5\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"black\"]\n\"5\" -> \"6\" [ label=\"[60, 60]\"\
+  \ , penwidth=2, color=\"black\"]\n\"6\" -> \"7\" [ label=\"[0.001, inf]\" , penwidth=2,\
+  \ color=\"black\"]\n\"4\" -> \"7\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  black\"]\n\"2\" -> \"7\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"\
+  ]\n\"5\" -> \"7\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"7\"\
+  \ -> \"8\" [ label=\"[60, 60]\" , penwidth=2, color=\"red\"]\n\"0\" -> \"8\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"red\"]\n\"8\" -> \"9\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"black\"]\n\"4\" -> \"9\" [ label=\"[0.001, inf]\" , penwidth=2,\
+  \ color=\"red\"]\n\"2\" -> \"9\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  red\"]\n\"9\" -> \"10\" [ label=\"[60, 60]\" , penwidth=2, color=\"black\"]\n\"\
+  7\" -> \"10\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"5\" -> \"\
+  10\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"10\" -> \"11\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"black\"]\n\"4\" -> \"11\" [ label=\"[0.001,\
+  \ inf]\" , penwidth=2, color=\"red\"]\n\"2\" -> \"11\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"red\"]\n\"7\" -> \"11\" [ label=\"[0.001, inf]\" , penwidth=2,\
+  \ color=\"red\"]\n\"6\" -> \"11\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  red\"]\n\"5\" -> \"11\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"\
+  11\" -> \"12\" [ label=\"[60, 60]\" , penwidth=2, color=\"black\"]\n\"0\" -> \"\
+  12\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"12\" -> \"13\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"black\"]\n\"4\" -> \"13\" [ label=\"[0.001,\
+  \ inf]\" , penwidth=2, color=\"red\"]\n\"2\" -> \"13\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"red\"]\n\"13\" -> \"14\" [ label=\"[60, 60]\" , penwidth=2,\
+  \ color=\"black\"]\n\"11\" -> \"14\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  black\"]\n\"7\" -> \"14\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\
+  \"5\" -> \"14\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"14\" ->\
+  \ \"15\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"4\" -> \"15\"\
+  \ [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"2\" -> \"15\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"red\"]\n\"11\" -> \"15\" [ label=\"[0.001,\
+  \ inf]\" , penwidth=2, color=\"black\"]\n\"10\" -> \"15\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"black\"]\n\"7\" -> \"15\" [ label=\"[0.001, inf]\" , penwidth=2,\
+  \ color=\"red\"]\n\"6\" -> \"15\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  red\"]\n\"5\" -> \"15\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"\
+  15\" -> \"16\" [ label=\"[60, 60]\" , penwidth=2, color=\"black\"]\n\"0\" -> \"\
+  16\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"16\" -> \"17\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"black\"]\n\"4\" -> \"17\" [ label=\"[0.001,\
+  \ inf]\" , penwidth=2, color=\"red\"]\n\"2\" -> \"17\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"red\"]\n\"17\" -> \"18\" [ label=\"[60, 60]\" , penwidth=2,\
+  \ color=\"black\"]\n\"15\" -> \"18\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  black\"]\n\"11\" -> \"18\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"\
+  ]\n\"7\" -> \"18\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"5\"\
+  \ -> \"18\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"18\" -> \"\
+  19\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"4\" -> \"19\" [\
+  \ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"2\" -> \"19\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"red\"]\n\"15\" -> \"19\" [ label=\"[0.001,\
+  \ inf]\" , penwidth=2, color=\"black\"]\n\"14\" -> \"19\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"black\"]\n\"11\" -> \"19\" [ label=\"[0.001, inf]\" , penwidth=2,\
+  \ color=\"black\"]\n\"10\" -> \"19\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  black\"]\n\"7\" -> \"19\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\
+  \"6\" -> \"19\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"5\" ->\
+  \ \"19\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"19\" -> \"20\"\
+  \ [ label=\"[60, 60]\" , penwidth=2, color=\"black\"]\n\"0\" -> \"20\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"red\"]\n\"20\" -> \"21\" [ label=\"[0.001,\
+  \ inf]\" , penwidth=2, color=\"black\"]\n\"4\" -> \"21\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"red\"]\n\"2\" -> \"21\" [ label=\"[0.001, inf]\" , penwidth=2,\
+  \ color=\"red\"]\n\"21\" -> \"22\" [ label=\"[60, 60]\" , penwidth=2, color=\"black\"\
+  ]\n\"19\" -> \"22\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"\
+  15\" -> \"22\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"11\" ->\
+  \ \"22\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"7\" -> \"22\"\
+  \ [ label=\"[0.001, inf]\" , penwidth=2, color=\"red\"]\n\"5\" -> \"22\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"red\"]\n\"22\" -> \"23\" [ label=\"[0.001,\
+  \ inf]\" , penwidth=2, color=\"black\"]\n\"2\" -> \"23\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"red\"]\n\"20\" -> \"23\" [ label=\"[0.001, inf]\" , penwidth=2,\
+  \ color=\"black\"]\n\"18\" -> \"23\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  black\"]\n\"16\" -> \"23\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"\
+  ]\n\"14\" -> \"23\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"\
+  12\" -> \"23\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"10\" ->\
+  \ \"23\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"8\" -> \"23\"\
+  \ [ label=\"[0.001, inf]\" , penwidth=2, color=\"black\"]\n\"6\" -> \"23\" [ label=\"\
+  [0.001, inf]\" , penwidth=2, color=\"red\"]\n\"4\" -> \"23\" [ label=\"[0.001, inf]\"\
+  \ , penwidth=2, color=\"red\"]\n\"23\" -> \"24\" [ label=\"[30, 30]\" , penwidth=2,\
+  \ color=\"black\"]\n\"1\" -> \"24\" [ label=\"[0.001, inf]\" , penwidth=2, color=\"\
+  red\"]\n}\n"
