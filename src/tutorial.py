@@ -1,15 +1,13 @@
 #!/usr/bin/env python
 
-import sys
 import rospy
-from rosplan_problem_interface.srv import *
-from rosplan_planner_interface.srv import *
+from std_srvs.srv import Empty
 
-rospy.wait_for_service('problem_generation_server')
-rospy.wait_for_service('planning_server')
+rospy.wait_for_service('/rosplan_problem_interface/problem_generation_server')
+rospy.wait_for_service('/rosplan_planner_interface/planning_server')
 
-problem_generation_server = rospy.ServiceProxy('problem_generation_server', problem_generation_server)
-planning_server = rospy.ServiceProxy('planning_server', planning_server)
+problem_generation_server = rospy.ServiceProxy('/rosplan_problem_interface/problem_generation_server', Empty)
+planning_server = rospy.ServiceProxy('/rosplan_planner_interface/planning_server', Empty)
 
 resp1 = problem_generation_server()
 print(resp1)
